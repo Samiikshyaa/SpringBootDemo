@@ -1,6 +1,12 @@
 package com.bway.springtestdemo.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="user_tbl")
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String fname;
     private String lname;
