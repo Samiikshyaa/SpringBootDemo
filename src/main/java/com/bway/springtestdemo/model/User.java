@@ -8,25 +8,6 @@ public class User {
     private String password;
     private String role;
 
-    private String enteredname;
-    private String enteredpass;
-
-    public String getEnteredname() {
-        return enteredname;
-    }
-
-    public void setEnteredname(String enteredname) {
-        this.enteredname = enteredname;
-    }
-
-    public String getEnteredpass() {
-        return enteredpass;
-    }
-
-    public void setEnteredpass(String enteredpass) {
-        this.enteredpass = enteredpass;
-    }
-
     public String getRole() {
         return role;
     }
