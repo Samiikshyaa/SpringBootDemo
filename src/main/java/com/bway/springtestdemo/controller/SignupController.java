@@ -11,16 +11,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class SignupController {
-
     @Autowired
     private UserRepository userRepo;
+
     @GetMapping("/signup")
     public String signup(){
         return "SignUp";
     }
 
     @PostMapping("/signup")
-    public String getData(@ModelAttribute User user, Model model){
+    public String getData(@ModelAttribute User user){
         userRepo.save(user);
         return "redirect:/login";
 //        return "LoginForm";
